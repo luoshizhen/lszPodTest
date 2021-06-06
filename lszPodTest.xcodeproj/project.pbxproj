@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		039BFDA0266C58B7004DA194 /* test001.m in Sources */ = {isa = PBXBuildFile; fileRef = 039BFD9E266C58B7004DA194 /* test001.m */; };
 		03C6DFD9266BA84F00ADEC3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C6DFD8266BA84F00ADEC3D /* AppDelegate.m */; };
 		03C6DFDC266BA84F00ADEC3D /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C6DFDB266BA84F00ADEC3D /* SceneDelegate.m */; };
 		03C6DFDF266BA84F00ADEC3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C6DFDE266BA84F00ADEC3D /* ViewController.m */; };
@@ -16,7 +17,6 @@
 		03C6DFEA266BA85100ADEC3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C6DFE9266BA85100ADEC3D /* main.m */; };
 		03C6DFF4266BA85100ADEC3D /* lszPodTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C6DFF3266BA85100ADEC3D /* lszPodTestTests.m */; };
 		03C6DFFF266BA85100ADEC3D /* lszPodTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C6DFFE266BA85100ADEC3D /* lszPodTestUITests.m */; };
-		03C6E011266BA86500ADEC3D /* test001.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C6E010266BA86500ADEC3D /* test001.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		039BFD9E266C58B7004DA194 /* test001.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test001.m; sourceTree = "<group>"; };
+		039BFD9F266C58B7004DA194 /* test001.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test001.h; sourceTree = "<group>"; };
 		03C6DFD4266BA84F00ADEC3D /* lszPodTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lszPodTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C6DFD7266BA84F00ADEC3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		03C6DFD8266BA84F00ADEC3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -55,8 +57,6 @@
 		03C6DFFA266BA85100ADEC3D /* lszPodTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lszPodTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C6DFFE266BA85100ADEC3D /* lszPodTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lszPodTestUITests.m; sourceTree = "<group>"; };
 		03C6E000266BA85100ADEC3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		03C6E00F266BA86500ADEC3D /* test001.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test001.h; sourceTree = "<group>"; };
-		03C6E010266BA86500ADEC3D /* test001.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test001.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		039BFD9D266C58B7004DA194 /* pod */ = {
+			isa = PBXGroup;
+			children = (
+				039BFD9E266C58B7004DA194 /* test001.m */,
+				039BFD9F266C58B7004DA194 /* test001.h */,
+			);
+			path = pod;
+			sourceTree = "<group>";
+		};
 		03C6DFCB266BA84F00ADEC3D = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +116,7 @@
 		03C6DFD6266BA84F00ADEC3D /* lszPodTest */ = {
 			isa = PBXGroup;
 			children = (
+				039BFD9D266C58B7004DA194 /* pod */,
 				03C6DFD7266BA84F00ADEC3D /* AppDelegate.h */,
 				03C6DFD8266BA84F00ADEC3D /* AppDelegate.m */,
 				03C6DFDA266BA84F00ADEC3D /* SceneDelegate.h */,
@@ -118,8 +128,6 @@
 				03C6DFE5266BA85100ADEC3D /* LaunchScreen.storyboard */,
 				03C6DFE8266BA85100ADEC3D /* Info.plist */,
 				03C6DFE9266BA85100ADEC3D /* main.m */,
-				03C6E00F266BA86500ADEC3D /* test001.h */,
-				03C6E010266BA86500ADEC3D /* test001.m */,
 			);
 			path = lszPodTest;
 			sourceTree = "<group>";
@@ -272,7 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03C6DFDF266BA84F00ADEC3D /* ViewController.m in Sources */,
-				03C6E011266BA86500ADEC3D /* test001.m in Sources */,
+				039BFDA0266C58B7004DA194 /* test001.m in Sources */,
 				03C6DFD9266BA84F00ADEC3D /* AppDelegate.m in Sources */,
 				03C6DFEA266BA85100ADEC3D /* main.m in Sources */,
 				03C6DFDC266BA84F00ADEC3D /* SceneDelegate.m in Sources */,
